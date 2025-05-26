@@ -1,0 +1,51 @@
+/* styles.css */
+
+.custom-button {
+  background-color: #2196F3; /* Azul */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+  z-index: 9999; /* Garante que fique acima de outros elementos */
+}
+
+.custom-button:hover {
+  background-color: #0b7dda;
+}
+
+.custom-button:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+/* Estilos para o botão flutuante */
+.custom-button.floating {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: auto; /* Ajusta a largura ao conteúdo */
+  min-width: 180px; /* Define uma largura mínima para os botões */
+  text-align: center;
+}
+
+/* Estilos para o botão de pausar/continuar */
+.custom-button.pause-button {
+  background-color: #ff9800; /* Laranja */
+  bottom: 80px; /* Posiciona acima do botão principal */
+  right: 20px; /* Garante o alinhamento correto à direita */
+  width: auto; /* Ajusta a largura ao conteúdo */
+  min-width: 180px; /* Mantém a mesma largura mínima */
+}
+
+.custom-button.pause-button:hover {
+  background-color: #e68a00;
+}

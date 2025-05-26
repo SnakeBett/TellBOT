@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Telegram Bulk Video Downloader",
+  "version": "0.1.0",
+  "description": "Baixa vídeos em massa de grupos/canais do Telegram.",
+  "permissions": [
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://web.telegram.org/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://web.telegram.org/k/*",
+        "*://web.telegram.org/a/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
